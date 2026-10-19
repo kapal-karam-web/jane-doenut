@@ -58,6 +58,11 @@ function HeroSection({ profile }) {
             </div>
           </div>
 
+          <div className="hero__visual-copy">
+            <strong>Dibuat untuk berbagi</strong>
+            <span>Pilihan manis untuk menemani setiap momen.</span>
+          </div>
+
           <div className="hero__badge">
             <strong>4</strong>
             <span>Kategori pilihan</span>
