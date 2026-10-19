@@ -1,5 +1,7 @@
 # Jane Doenut
 
+Jane Doenut adalah usaha kuliner yang menawarkan beragam pilihan donat dengan rasa menarik dan harga terjangkau. Melalui website ini, pelanggan dapat mengenal Jane Doenut, melihat menu dan promo, serta memperoleh informasi lokasi dan kontak dengan mudah.
+
 Website profile **Jane Doenut** yang dikembangkan sebagai Tugas Besar Tahap 1 oleh kelompok **Kapal Karam**. Website ini memperkenalkan profil usaha, produk, promo, cerita usaha, lokasi, dan menyediakan halaman kontak dalam tampilan responsif.
 
 > **Status pengembangan:** Dalam proses pengerjaan.
@@ -74,7 +76,7 @@ Proyek dikembangkan secara kolaboratif menggunakan GitHub, feature branch, dan p
 
 ## Anggota dan Pembagian Tugas
 
-### Aqsa
+### Muh Aqsa Sirojudin
 
 **Peran:** Project setup, shared layout, Home, Location, dan integrasi.
 
@@ -89,7 +91,7 @@ Tanggung jawab:
 - Mengintegrasikan pekerjaan seluruh anggota.
 - Memeriksa lint, production build, navigasi, dan responsive design.
 
-### Langga
+### Nandana Atha Balangga
 
 **Peran:** Menu dan data produk.
 
@@ -104,7 +106,7 @@ Tanggung jawab:
 - Menangani loading, error, dan empty state pada halaman menu.
 - Memastikan halaman menu responsif dan mudah diakses.
 
-### Eru
+### Putra Erlang Duawa
 
 **Peran:** Promo, About, dan Contact.
 
@@ -224,7 +226,7 @@ Menjalankan development server:
 npm run dev
 ```
 
-Memeriksa source code menggunakan ESLint:
+Memeriksa source code menggunakan OxLint:
 
 ```bash
 npm run lint
@@ -350,36 +352,6 @@ Checklist pemeriksaan manual:
 - [ ] Formulir menampilkan validasi yang sesuai.
 - [ ] Tampilan telah diperiksa pada ukuran mobile, tablet, dan desktop.
 - [ ] Halaman 404 muncul untuk route yang tidak tersedia.
-
-## Deployment
-
-Tautan website:
-
-```text
-Belum tersedia. Tambahkan URL deployment setelah website dipublikasikan.
-```
-
-Platform deployment yang dapat digunakan antara lain Vercel, Netlify, atau GitHub Pages. Pastikan seluruh route React tetap dapat diakses setelah aplikasi dipublikasikan.
-
-## Sumber Aset
-
-Dokumentasikan seluruh aset eksternal yang digunakan, termasuk:
-
-- Gambar produk.
-- Gambar promo.
-- Ikon.
-- Font.
-- Ilustrasi.
-- Data atau API pihak ketiga.
-
-Format pencatatan yang disarankan:
-
-```text
-Nama aset - Nama pembuat/situs - URL sumber - Jenis lisensi
-```
-
-Jika aset dibuat sendiri, beri keterangan `Aset dibuat oleh kelompok`.
-
 ---
 
-Dikembangkan oleh **Aqsa, Langga, dan Eru** untuk Tugas Besar Tahap 1.
+Dikembangkan oleh **Muh Aqsa Sirojudin, Nandana Atha Balangga, dan Putra Erlang Duawa** untuk Tugas Besar Tahap 1.
