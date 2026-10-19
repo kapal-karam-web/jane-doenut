@@ -133,14 +133,21 @@ jane-doenut/
 │   │   └── promos.json
 │   └── images/
 │       ├── common/
+│       │   └── hero-donuts.webp
 │       ├── products/
 │       └── promos/
 ├── src/
 │   ├── components/
+│   │   ├── home/
+│   │   │   ├── FeaturedMenu.jsx
+│   │   │   ├── HeroSection.jsx
+│   │   │   └── PromoPreview.jsx
 │   │   ├── layout/
 │   │   │   ├── Footer.jsx
 │   │   │   ├── MainLayout.jsx
 │   │   │   └── Navbar.jsx
+│   │   ├── location/
+│   │   │   └── LocationCard.jsx
 │   │   └── ui/
 │   │       ├── ErrorMessage.jsx
 │   │       ├── LoadingSpinner.jsx
@@ -156,6 +163,9 @@ jane-doenut/
 │   │   ├── NotFoundPage.jsx
 │   │   ├── PromoDetailPage.jsx
 │   │   └── PromoPage.jsx
+│   ├── styles/
+│   │   ├── home.css
+│   │   └── location.css
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
