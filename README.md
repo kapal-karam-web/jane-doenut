@@ -1,16 +1,385 @@
-# React + Vite
+# Jane Doenut
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Website profile **Jane Doenut** yang dikembangkan sebagai Tugas Besar Tahap 1 oleh kelompok **Kapal Karam**. Website ini memperkenalkan profil usaha, produk, promo, cerita usaha, lokasi, dan menyediakan halaman kontak dalam tampilan responsif.
 
-Currently, two official plugins are available:
+> **Status pengembangan:** Dalam proses pengerjaan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Daftar Isi
 
-## React Compiler
+- [Tentang Proyek](#tentang-proyek)
+- [Fitur Utama](#fitur-utama)
+- [Halaman Website](#halaman-website)
+- [Teknologi](#teknologi)
+- [Anggota dan Pembagian Tugas](#anggota-dan-pembagian-tugas)
+- [Struktur Folder](#struktur-folder)
+- [Cara Menjalankan Proyek](#cara-menjalankan-proyek)
+- [Script yang Tersedia](#script-yang-tersedia)
+- [Alur Kerja Git](#alur-kerja-git)
+- [Aturan Kontribusi](#aturan-kontribusi)
+- [Pengujian](#pengujian)
+- [Deployment](#deployment)
+- [Sumber Aset](#sumber-aset)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tentang Proyek
 
-## Expanding the Oxlint configuration
+Jane Doenut adalah website profil usaha donat yang dibangun menggunakan React dan Vite. Website dirancang untuk membantu pengunjung:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Mengenal Jane Doenut dan cerita usahanya.
+- Melihat daftar produk berdasarkan kategori.
+- Mencari dan menyaring produk.
+- Melihat daftar serta detail promo.
+- Menemukan informasi lokasi dan kontak.
+- Mengirim pesan melalui formulir kontak.
+
+Proyek dikembangkan secara kolaboratif menggunakan GitHub, feature branch, dan pull request agar kontribusi setiap anggota terdokumentasi dengan jelas.
+
+## Fitur Utama
+
+- Navigasi antars halaman menggunakan React Router.
+- Navbar responsif untuk desktop, tablet, dan perangkat seluler.
+- Komponen layout yang dapat digunakan kembali.
+- Daftar produk dengan pencarian dan filter kategori.
+- Daftar promo dan halaman detail promo dinamis.
+- Pengambilan data menggunakan Fetch API.
+- Loading, error, empty, dan success state.
+- Formulir kontak dengan validasi input.
+- Semantic HTML dan dukungan aksesibilitas dasar.
+- Halaman 404 untuk alamat yang tidak ditemukan.
+- Tampilan responsif menggunakan Flexbox, Grid, dan media query.
+
+## Halaman Website
+
+| Route | Halaman | Penanggung Jawab |
+|---|---|---|
+| `/` | Home | Aqsa |
+| `/menu` | Menu produk | Langga |
+| `/promo` | Daftar promo | Eru |
+| `/promo/:slug` | Detail promo dinamis | Eru |
+| `/about` | Our Story | Eru |
+| `/location` | Lokasi dan informasi usaha | Aqsa |
+| `/contact` | Formulir kontak | Eru |
+| Route tidak dikenal | Not Found / 404 | Aqsa |
+
+## Teknologi
+
+- React
+- Vite
+- React Router DOM
+- JavaScript
+- HTML5
+- CSS3
+- Fetch API
+- ESLint
+- Git dan GitHub
+
+## Anggota dan Pembagian Tugas
+
+### Aqsa
+
+**Peran:** Project setup, shared layout, Home, Location, dan integrasi.
+
+Tanggung jawab:
+
+- Menyiapkan project React dan Vite.
+- Mengatur struktur folder dan routing.
+- Membuat Navbar, Footer, dan Main Layout.
+- Membuat halaman Home.
+- Membuat halaman Location.
+- Membuat komponen loading dan error yang dapat digunakan kembali.
+- Mengintegrasikan pekerjaan seluruh anggota.
+- Memeriksa lint, production build, navigasi, dan responsive design.
+
+### Langga
+
+**Peran:** Menu dan data produk.
+
+Tanggung jawab:
+
+- Membuat halaman Menu.
+- Membuat data produk.
+- Mengambil data produk menggunakan Fetch API.
+- Membuat reusable product card.
+- Membuat filter kategori.
+- Membuat fitur pencarian produk.
+- Menangani loading, error, dan empty state pada halaman menu.
+- Memastikan halaman menu responsif dan mudah diakses.
+
+### Eru
+
+**Peran:** Promo, About, dan Contact.
+
+Tanggung jawab:
+
+- Membuat halaman daftar Promo.
+- Membuat halaman detail promo dinamis.
+- Membuat data promo dan mengambilnya menggunakan Fetch API.
+- Membuat halaman Our Story.
+- Membuat halaman Contact.
+- Membuat validasi formulir dan pesan kesalahan.
+- Menampilkan success state setelah formulir berhasil dikirim.
+- Memastikan halaman yang dibuat responsif dan mudah diakses.
+
+## Struktur Folder
+
+```text
+jane-doenut/
+├── public/
+│   ├── data/
+│   │   ├── locations.json
+│   │   ├── products.json
+│   │   ├── profile.json
+│   │   └── promos.json
+│   └── images/
+│       ├── common/
+│       ├── products/
+│       └── promos/
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Footer.jsx
+│   │   │   ├── MainLayout.jsx
+│   │   │   └── Navbar.jsx
+│   │   └── ui/
+│   │       ├── ErrorMessage.jsx
+│   │       ├── LoadingSpinner.jsx
+│   │       └── SectionHeader.jsx
+│   ├── hooks/
+│   │   └── useFetch.js
+│   ├── pages/
+│   │   ├── AboutPage.jsx
+│   │   ├── ContactPage.jsx
+│   │   ├── HomePage.jsx
+│   │   ├── LocationPage.jsx
+│   │   ├── MenuPage.jsx
+│   │   ├── NotFoundPage.jsx
+│   │   ├── PromoDetailPage.jsx
+│   │   └── PromoPage.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+```
+
+> Struktur folder dapat berkembang selama proses implementasi fitur.
+
+## Cara Menjalankan Proyek
+
+### Prasyarat
+
+Pastikan perangkat sudah memiliki:
+
+- Node.js
+- npm
+- Git
+
+Periksa instalasi dengan perintah berikut:
+
+```bash
+node --version
+npm --version
+git --version
+```
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/kapal-karam-web/jane-doenut.git
+```
+
+### 2. Masuk ke folder proyek
+
+```bash
+cd jane-doenut
+```
+
+### 3. Install dependency
+
+```bash
+npm install
+```
+
+### 4. Jalankan development server
+
+```bash
+npm run dev
+```
+
+Buka URL lokal yang ditampilkan oleh Vite di terminal. Secara default, Vite biasanya menggunakan:
+
+```text
+http://localhost:5173
+```
+
+## Script yang Tersedia
+
+Menjalankan development server:
+
+```bash
+npm run dev
+```
+
+Memeriksa source code menggunakan ESLint:
+
+```bash
+npm run lint
+```
+
+Membuat production build:
+
+```bash
+npm run build
+```
+
+Meninjau hasil production build secara lokal:
+
+```bash
+npm run preview
+```
+
+## Alur Kerja Git
+
+Proyek menggunakan dua branch utama:
+
+- `main`: versi stabil atau siap dirilis.
+- `develop`: tempat integrasi seluruh fitur sebelum masuk ke `main`.
+
+Setiap fitur harus dikerjakan pada branch terpisah yang dibuat dari `develop`.
+
+### Memulai pekerjaan
+
+```bash
+git checkout develop
+git pull origin develop
+git checkout -b feature/nama-fitur-namaanggota
+```
+
+Contoh:
+
+```bash
+git checkout -b feature/menu-langga
+```
+
+### Menyimpan perubahan
+
+```bash
+git add .
+git commit -m "feat(menu): add product category filter"
+git push -u origin feature/menu-langga
+```
+
+Setelah fitur selesai, buat pull request dari feature branch menuju `develop`.
+
+### Format nama branch
+
+```text
+feature/nama-fitur-namaanggota
+fix/nama-perbaikan-namaanggota
+chore/nama-pekerjaan-namaanggota
+```
+
+Contoh:
+
+```text
+feature/home-aqsa
+feature/menu-langga
+feature/promo-eru
+fix/mobile-navbar-aqsa
+```
+
+### Format commit
+
+Proyek menggunakan pesan commit yang singkat dan deskriptif:
+
+```text
+feat: menambahkan fitur baru
+fix: memperbaiki bug
+style: mengubah tampilan tanpa mengubah logika
+refactor: merapikan kode tanpa mengubah fungsi
+chore: konfigurasi atau pemeliharaan proyek
+docs: memperbarui dokumentasi
+test: menambahkan atau memperbaiki pengujian
+```
+
+Contoh:
+
+```bash
+git commit -m "feat(home): add featured products section"
+git commit -m "fix(navbar): close mobile menu after navigation"
+git commit -m "docs: update project installation guide"
+```
+
+## Aturan Kontribusi
+
+1. Jangan mengerjakan fitur langsung pada branch `main`.
+2. Selalu perbarui branch `develop` sebelum membuat feature branch.
+3. Kerjakan hanya bagian yang menjadi tanggung jawab masing-masing.
+4. Jangan mengubah file milik anggota lain tanpa berkomunikasi terlebih dahulu.
+5. Buat commit bertahap dan bermakna.
+6. Jangan memasukkan API key, password, atau data sensitif ke repository.
+7. Jalankan lint dan build sebelum membuat pull request.
+8. Jelaskan perubahan dan cara pengujian pada deskripsi pull request.
+9. Selesaikan conflict pada feature branch, bukan langsung pada `main`.
+10. Minta minimal satu anggota lain memeriksa pull request sebelum merge.
+
+## Pengujian
+
+Sebelum membuat pull request, jalankan:
+
+```bash
+npm run lint
+npm run build
+```
+
+Checklist pemeriksaan manual:
+
+- [ ] Seluruh route dapat dibuka.
+- [ ] Tidak ada error pada browser console.
+- [ ] Navbar dapat digunakan pada desktop dan mobile.
+- [ ] Menu mobile dapat dibuka dan ditutup.
+- [ ] Navigasi dapat digunakan menggunakan keyboard.
+- [ ] Seluruh gambar memiliki teks alternatif yang sesuai.
+- [ ] Data menampilkan loading state ketika dimuat.
+- [ ] Data menampilkan error state ketika gagal dimuat.
+- [ ] Tombol retry bekerja.
+- [ ] Formulir menampilkan validasi yang sesuai.
+- [ ] Tampilan telah diperiksa pada ukuran mobile, tablet, dan desktop.
+- [ ] Halaman 404 muncul untuk route yang tidak tersedia.
+
+## Deployment
+
+Tautan website:
+
+```text
+Belum tersedia. Tambahkan URL deployment setelah website dipublikasikan.
+```
+
+Platform deployment yang dapat digunakan antara lain Vercel, Netlify, atau GitHub Pages. Pastikan seluruh route React tetap dapat diakses setelah aplikasi dipublikasikan.
+
+## Sumber Aset
+
+Dokumentasikan seluruh aset eksternal yang digunakan, termasuk:
+
+- Gambar produk.
+- Gambar promo.
+- Ikon.
+- Font.
+- Ilustrasi.
+- Data atau API pihak ketiga.
+
+Format pencatatan yang disarankan:
+
+```text
+Nama aset - Nama pembuat/situs - URL sumber - Jenis lisensi
+```
+
+Jika aset dibuat sendiri, beri keterangan `Aset dibuat oleh kelompok`.
+
+---
+
+Dikembangkan oleh **Aqsa, Langga, dan Eru** untuk Tugas Besar Tahap 1.
