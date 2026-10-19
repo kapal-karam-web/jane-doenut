@@ -1,0 +1,41 @@
+{
+  "businessName": "Jane Doenut",
+  "tagline": "Manisnya hadir di setiap momen",
+  "heroTitle": "Donat lembut untuk setiap cerita",
+  "heroDescription": "Jane Doenut menghadirkan beragam donat lembut dengan rasa menarik dan harga terjangkau untuk menemani waktu santai bersama orang-orang tersayang.",
+  "summary": "Berawal dari kecintaan terhadap donat, Jane Doenut hadir dengan pilihan rasa klasik hingga kreasi modern. Setiap produk dibuat untuk memberikan pengalaman sederhana yang berkesan dalam setiap gigitan.",
+  "heroImage": "/images/common/hero-donuts.webp",
+  "heroImageAlt": "Beragam donat Jane Doenut tersusun di atas meja",
+  "featuredCategories": [
+    {
+      "id": 1,
+      "name": "Donut",
+      "description": "Donat klasik yang lembut dengan beragam pilihan topping.",
+      "icon": "🍩"
+    },
+    {
+      "id": 2,
+      "name": "Bomboloni",
+      "description": "Donat lembut dengan isian krim melimpah di bagian dalam.",
+      "icon": "🥯"
+    },
+    {
+      "id": 3,
+      "name": "Donat Mochi",
+      "description": "Perpaduan tekstur kenyal dan lembut dalam satu gigitan.",
+      "icon": "✨"
+    },
+    {
+      "id": 4,
+      "name": "Donat Eclair",
+      "description": "Kreasi donat panjang dengan lapisan dan isian istimewa.",
+      "icon": "🍫"
+    }
+  ],
+  "promoPreview": {
+    "eyebrow": "Promo Pilihan",
+    "title": "Lebih banyak donat, lebih seru dinikmati bersama",
+    "description": "Temukan paket pilihan untuk pelajar, teman, keluarga, pasangan, dan anak. Setiap paket dirancang untuk membuat momen berbagi menjadi lebih hemat.",
+    "buttonText": "Lihat Semua Promo"
+  }
+}
