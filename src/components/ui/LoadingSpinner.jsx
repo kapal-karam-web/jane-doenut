@@ -1,8 +1,9 @@
-function LoadingSpinner() {
+function LoadingSpinner({ message = "Memuat data..." }) {
   return (
-    <span className="loading-spinner" role="status" aria-label="Memuat">
-      Memuat...
-    </span>
+    <div className="loading-state" role="status" aria-live="polite">
+      <span className="loading-state__spinner" aria-hidden="true" />
+      <p>{message}</p>
+    </div>
   );
 }
 
