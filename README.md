@@ -71,7 +71,7 @@ Proyek dikembangkan secara kolaboratif menggunakan GitHub, feature branch, dan p
 - HTML5
 - CSS3
 - Fetch API
-- ESLint
+- OxLint
 - Git dan GitHub
 
 ## Anggota dan Pembagian Tugas
