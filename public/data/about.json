@@ -1,0 +1,60 @@
+{
+  "heroTitle": "Our Story",
+  "story": {
+    "title": "Every Donut Has a Story",
+    "description": "Jane Doe Mandi lebih dari sekadar toko donat. Kami adalah tempat berkumpulnya suasana hati yang baik, orang-orang baik, dan donat lezat. Sejak 2023, kami menyajikan donat rumahan dengan rasa kreatif, bahan berkualitas, dan banyak cinta.",
+    "image": "/images/common/Gambar-about.webp",
+    "imageAlt": "Kotak donat Jane Doe Mandi"
+  },
+  "origin": {
+    "title": "How It All Started",
+    "paragraphs": [
+      "Jane Doenut berawal dari mimpi kecil di dapur dan kecintaan pada donat. Dari dukungan teman dan keluarga, usaha ini tumbuh menjadi tempat yang menghadirkan kebahagiaan.",
+      "Kami percaya donat yang lezat bisa menciptakan momen kecil yang menyenangkan."
+    ],
+    "image": "/images/common/gambar-about2.webp",
+    "imageAlt": "Donat Jane Doe Mandi di atas meja"
+  },
+  "values": {
+    "title": "Our Values",
+    "subtitle": "The sweet things we always believe in",
+    "items": [
+      {
+        "title": "Fresh Ingredients",
+        "description": "Kami menggunakan bahan berkualitas agar setiap donat terasa segar, lembut, dan penuh rasa.",
+        "image": "/images/common/value-gambar1.webp",
+        "imageAlt": "Bahan-bahan untuk membuat donat"
+      },
+      {
+        "title": "Made With Love",
+        "description": "Setiap donat dibuat dengan perhatian karena kami percaya cinta membuat semuanya terasa lebih baik.",
+        "image": "/images/common/value-gambar2.webp",
+        "imageAlt": "Donat yang dibuat dengan penuh perhatian"
+      },
+      {
+        "title": "For Every Moment",
+        "description": "Dari camilan harian sampai perayaan, donat kami hadir untuk membuat setiap momen lebih manis.",
+        "image": "/images/common/value-gambar3.webp",
+        "imageAlt": "Donat untuk berbagai momen"
+      }
+    ]
+  },
+  "reasons": {
+    "title": "Why Customers Choose Us",
+    "subtitle": "More Than Just Donuts",
+    "items": [
+      {
+        "title": "Unique Flavors",
+        "description": "Rasa kreatif dan lezat yang sulit ditemukan di tempat lain."
+      },
+      {
+        "title": "Consistent Quality",
+        "description": "Selalu segar dan dibuat dengan kualitas yang sama setiap hari."
+      },
+      {
+        "title": "A Happier Community",
+        "description": "Kami bangga menjadi bagian dari momen manis pelanggan."
+      }
+    ]
+  }
+}
