@@ -1,127 +1,97 @@
+import ErrorMessage from "../components/ui/ErrorMessage";
+import LoadingSpinner from "../components/ui/LoadingSpinner";
+import useFetch from "../hooks/useFetch";
 import "../styles/about.css";
 
 function AboutPage() {
+  const { data: about, isLoading, error, retry } = useFetch("/data/about.json");
+
+  if (isLoading) {
+    return (
+      <div className="page-state container">
+        <LoadingSpinner message="Menyiapkan cerita Jane Doenut..." />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="page-state container">
+        <ErrorMessage message={error} onRetry={retry} />
+      </div>
+    );
+  }
+
   return (
     <>
-      {/*Judul dan gambar background*/}
       <section className="about-judul">
-        <h1>Our Story</h1>
+        <h1>{about.heroTitle}</h1>
       </section>
 
-      {/*Isi bagian kedua. narasi dan gambar*/}
       <section className="about-story container">
         <div className="about-story__copy">
-          <h2>Every Donut Has a Story</h2>
-          <p>
-            Jane Doe Mandi lebih dari sekadar toko donat. Kami adalah tempat
-            berkumpulnya suasana hati yang baik, orang-orang baik, dan donat lezat.
-            Sejak 2023, kami menyajikan donat rumahan dengan rasa kreatif, bahan
-            berkualitas, dan banyak cinta.
-          </p>
+          <h2>{about.story.title}</h2>
+          <p>{about.story.description}</p>
         </div>
 
         <img
           className="about-story__image"
-          src="/images/common/Gambar-about.webp"
-          alt="Kotak donat Jane Doe Mandi" /*tulisan pengganti jika gambar gak keload*/
+          src={about.story.image}
+          alt={about.story.imageAlt}
         />
       </section>
 
-      {/*Isi bagian ketiga. box ceklat, narasi, dan gambar*/}
       <section className="about-origin">
         <div className="about-origin__content container">
           <div className="about-origin__copy">
-            <h2>How It All Started</h2>
-            <p>
-              Jane Doenut berawal dari mimpi kecil di dapur dan kecintaan pada
-              donat. Dari dukungan teman dan keluarga, usaha ini tumbuh menjadi
-              tempat yang menghadirkan kebahagiaan.
-            </p>
-            <p>
-              Kami percaya donat yang lezat bisa menciptakan momen kecil yang
-              menyenangkan.
-            </p>
+            <h2>{about.origin.title}</h2>
+            {about.origin.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
           </div>
 
           <img
             className="about-origin__image"
-            src="/images/common/gambar-about2.webp"
-            alt="Donat Jane Doe Mandi di atas meja"
+            src={about.origin.image}
+            alt={about.origin.imageAlt}
           />
-
         </div>
       </section>
 
       <section className="about-values container">
         <div className="about-values__heading">
-          <h2>Our Values</h2>
-          <p>The sweet things we always believe in</p>
+          <h2>{about.values.title}</h2>
+          <p>{about.values.subtitle}</p>
         </div>
 
         <div className="about-values__grid">
-          <article className="about-value-card"> {/*menandai satu bagian informasi yang sifatnya berdiri sendiri*/}
-            <img
-              src="/images/common/value-gambar1.webp"
-              alt="Bahan-bahan untuk membuat donat"
-            />
-            <h3>Fresh Ingredients</h3>
-            <p>Kami menggunakan bahan berkualitas agar setiap donat terasa segar,
-              lembut, dan penuh rasa.</p>
-          </article>
-
-          <article className="about-value-card">
-            <img
-              src="/images/common/value-gambar2.webp"
-              alt="Donat yang dibuat dengan penuh perhatian"
-            />
-            <h3>Made With Love</h3>
-            <p>
-              Setiap donat dibuat dengan perhatian karena kami percaya cinta membuat
-              semuanya terasa lebih baik.
-            </p>
-          </article>
-
-          <article className="about-value-card">
-            <img
-              src="/images/common/value-gambar3.webp"
-              alt="Donat untuk berbagai momen"
-            />
-            <h3>For Every Moment</h3>
-            <p>
-              Dari camilan harian sampai perayaan, donat kami hadir untuk membuat
-              setiap momen lebih manis.
-            </p>
-          </article>
+          {about.values.items.map((value) => (
+            <article className="about-value-card" key={value.title}>
+              <img src={value.image} alt={value.imageAlt} />
+              <h3>{value.title}</h3>
+              <p>{value.description}</p>
+            </article>
+          ))}
         </div>
       </section>
 
       <section className="about-choose container">
         <div className="about-choose__heading">
-          <h2> Why Customers Choose Us</h2>
-          <p>More Than Just Donuts</p>
+          <h2>{about.reasons.title}</h2>
+          <p>{about.reasons.subtitle}</p>
         </div>
 
         <div className="about-choose__list">
-          <article>
-            <h3>Unique Flavors</h3>
-            <p>Rasa kreatif dan lezat yang sulit ditemukan di tempat lain.</p>
-          </article>
-
-          <article>
-            <h3>Consistent Quality</h3>
-            <p>Selalu segar dan dibuat dengan kualitas yang sama setiap hari.</p>
-          </article>
-
-          <article>
-            <h3>A Happier Community</h3>
-            <p>Kami bangga menjadi bagian dari momen manis pelanggan.</p>
-          </article>
+          {about.reasons.items.map((reason) => (
+            <article key={reason.title}>
+              <h3>{reason.title}</h3>
+              <p>{reason.description}</p>
+            </article>
+          ))}
         </div>
-    </section >
+      </section>
     </>
   );
 }
-
-
 
 export default AboutPage;
