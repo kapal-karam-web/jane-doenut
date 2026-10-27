@@ -1,0 +1,202 @@
+.location-hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(4rem, 9vw, 7rem);
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 85% 30%, rgba(242, 184, 75, 0.35), transparent 28%),
+    #2f241f;
+}
+
+.location-hero::after {
+  position: absolute;
+  right: -5rem;
+  bottom: -7rem;
+  width: 22rem;
+  height: 22rem;
+  border: 3rem solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  content: "";
+}
+
+.location-hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.location-hero .eyebrow {
+  color: var(--color-secondary);
+}
+
+.location-hero h1 {
+  max-width: 850px;
+  margin: 0.75rem 0 1.25rem;
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  line-height: 1;
+}
+
+.location-hero p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 0;
+  color: #d7c8bf;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.location-list {
+  background: #fffaf5;
+}
+
+.location-list__grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.location-list__state,
+.location-list__empty {
+  display: grid;
+  min-height: 320px;
+  place-items: center;
+  margin-top: 2rem;
+}
+
+.location-list__empty {
+  align-content: center;
+  padding: 2rem;
+  border: 1px dashed var(--color-border);
+  background: var(--color-surface);
+  border-radius: var(--radius-medium);
+  text-align: center;
+}
+
+.location-list__empty h2 {
+  margin-bottom: 0.5rem;
+}
+
+.location-list__empty p {
+  margin: 0;
+  color: var(--color-text-soft);
+}
+
+.location-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-medium);
+}
+
+.location-card__content {
+  padding: clamp(2rem, 6vw, 4rem);
+}
+
+.location-card h2 {
+  margin: 0.6rem 0 2rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.location-card__information {
+  display: grid;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.location-card__information section {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.location-card__information section:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.location-card__information h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+}
+
+.location-card address,
+.location-contact,
+.opening-hours {
+  color: var(--color-text-soft);
+  line-height: 1.75;
+}
+
+.opening-hours {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.opening-hours div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.opening-hours dt {
+  font-weight: 700;
+}
+
+.opening-hours dd {
+  margin: 0;
+}
+
+.location-contact {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.location-contact a {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.location-contact a:hover {
+  text-decoration: underline;
+}
+
+.location-card__map {
+  min-height: 620px;
+  background: var(--color-primary-light);
+}
+
+.location-card__map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 620px;
+  border: 0;
+}
+
+@media (max-width: 960px) {
+  .location-card {
+    grid-template-columns: 1fr;
+  }
+
+  .location-card__map,
+  .location-card__map iframe {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .location-card__content {
+    padding: 1.5rem;
+  }
+
+  .opening-hours div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .location-card__map,
+  .location-card__map iframe {
+    min-height: 340px;
+  }
+}

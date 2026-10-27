@@ -1,0 +1,117 @@
+.contact-hero{
+    min-height:330px; /*Ngatur Tinggi Banner*/
+    display: grid;      /*Pakai tata letak grid*/
+    place-items:center;  /*Menaruh Isi banner (text) di tengah*/
+    color: white;       /*Warna Pada Text*/
+
+    /*Membuat gradient warna dan menaruh url foto dari folder public*/
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+    url("/images/common/bg-contact.webp") center / cover;
+}
+
+.contact-intro {
+  display: grid; /*mengatur isi section pakai grid. kayak bikin kolom*/
+  grid-template-columns: 1.2fr 0.8fr; /*mmebuat 2 kolom dan fr adalah ruang yang dipakai*/
+  align-items: center; /*sejajarkan isi kolom ke tengah*/
+  gap: 3rem; 
+  padding-block: 4rem;/*memberi ruang dalam section sisi atas dan bawah*/
+}
+
+.contact-intro__image {
+  width: 100%; /*Ukuran foto sesuai kolom*/
+  max-width: 320px;  
+  justify-self: center;  /*Foto ditengah*/
+  aspect-ratio: 1; /*membuat bingkainya persegi*/
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.contact-details {
+  padding-bottom: 4rem;
+}
+
+.contact-card {
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-small);
+}
+
+.contact-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.contact-card a {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr); /*Mmebuat Dua Kolom dengan ukuran yang sama*/
+  gap: 1.25rem;
+}
+
+.contact-store{
+  display: grid;
+  grid-template-columns:0.9fr 1.1fr;
+  align-items: center;
+  gap: 3rem;
+  padding-block: 4rem;
+}
+
+.contact-store__copy h2{
+  margin: 0.75rem 0 1rem;
+}
+
+.contact-store__copy > p:not(.eyebrow){ /*Memilih paragraf yang  ada di dalam contact-store_copy, kecuali paragrad yang punya class eyebrow*/
+  max-width: 480px;
+  color: var(--color-text-soft);
+  line-height: 1.7;
+}
+
+.contact-store__map{
+  min-height: 360px;
+  overflow: hidden;
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-medium);
+}
+
+.contact-store__map iframe{
+  width: 100%;
+  height:100%;
+  min-height: 360px;
+  border: 0;
+}
+
+@media (max-width: 700px) { /*Sebuah aturan yang berlaku ke kondisi tertentu*/
+  .contact-intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+
+  .contact-intro__image {
+    max-width: 100%;
+  }
+
+    .contact-cards {
+    grid-template-columns: 1fr; /*Khusus Tampilan di HP jadi satu kolom*/
+  }
+
+  .contact-store {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+
+  .contact-store__map,
+  .contact-store__map iframe {
+    min-height: 300px;
+  }
+}
+
+
+
