@@ -1,0 +1,171 @@
+[
+  {
+    "slug": "paket-pasangan",
+    "title": "Paket Pasangan",
+    "heroImage": "/images/common/bg-promo.webp",
+    "heroAlt": "Paket donat untuk pasangan",
+    "items": [
+      {
+        "id": "promo-pasangan",
+        "image": "/images/common/gambar-promo1.webp",
+        "alt": "Promo donat spesial pasangan"
+      },
+      {
+        "id": "promo-sweet-six",
+        "image": "/images/common/gambar-promo2.webp",
+        "alt": "Promo Sweet Six"
+      },
+      {
+        "id": "promo-sweet-rush",
+        "image": "/images/common/gambar-promo3.webp",
+        "alt": "Promo Sweet Rush"
+      },
+      {
+        "id": "promo-flavor",
+        "image": "/images/common/gambar-promo4.webp",
+        "alt": "Promo pilihan rasa donat"
+      },
+      {
+        "id": "promo-biscoff",
+        "image": "/images/common/gambar-promo5.webp",
+        "alt": "Promo donat Biscoff"
+      }
+    ]
+  },
+
+  {
+  "slug": "paket-keluarga",
+  "title": "Paket Keluarga",
+  "heroImage": "/images/common/bg-promo2(2).webp",
+  "heroAlt": "Paket donat untuk keluarga",
+  "items": [
+    {
+      "id": "promo-keluarga",
+      "image": "/images/common/gambar-promo1.webp",
+      "alt": "Promo donat spesial keluarga"
+    },
+    {
+      "id": "promo-sweet-six",
+      "image": "/images/common/gambar-promo2.webp",
+      "alt": "Promo Sweet Six"
+    },
+    {
+      "id": "promo-sweet-rush",
+      "image": "/images/common/gambar-promo3.webp",
+      "alt": "Promo Sweet Rush"
+    },
+    {
+      "id": "promo-flavor",
+      "image": "/images/common/gambar-promo4.webp",
+      "alt": "Promo pilihan rasa donat"
+    },
+    {
+      "id": "promo-biscoff",
+      "image": "/images/common/gambar-promo5.webp",
+      "alt": "Promo donat Biscoff"
+    }
+  ]
+},
+
+{
+  "slug": "paket-anak",
+  "title": "Paket anak",
+  "heroImage": "/images/common/bg-promo3(1).webp",
+  "heroAlt": "Paket donat untuk anak",
+  "items": [
+    {
+      "id": "promo-anak",
+      "image": "/images/common/gambar-promo1.webp",
+      "alt": "Promo donat spesial anak"
+    },
+    {
+      "id": "promo-sweet-six",
+      "image": "/images/common/gambar-promo2.webp",
+      "alt": "Promo Sweet Six"
+    },
+    {
+      "id": "promo-sweet-rush",
+      "image": "/images/common/gambar-promo3.webp",
+      "alt": "Promo Sweet Rush"
+    },
+    {
+      "id": "promo-flavor",
+      "image": "/images/common/gambar-promo4.webp",
+      "alt": "Promo pilihan rasa donat"
+    },
+    {
+      "id": "promo-biscoff",
+      "image": "/images/common/gambar-promo5.webp",
+      "alt": "Promo donat Biscoff"
+    }
+  ]
+},
+{
+  "slug": "paket-pelajar",
+  "title": "Paket pelajar",
+  "heroImage": "/images/common/bg-promo4.webp",
+  "heroAlt": "Paket donat untuk pelajar",
+  "items": [
+    {
+      "id": "promo-pelajar",
+      "image": "/images/common/gambar-promo1.webp",
+      "alt": "Promo donat spesial pelajar"
+    },
+    {
+      "id": "promo-sweet-six",
+      "image": "/images/common/gambar-promo2.webp",
+      "alt": "Promo Sweet Six"
+    },
+    {
+      "id": "promo-sweet-rush",
+      "image": "/images/common/gambar-promo3.webp",
+      "alt": "Promo Sweet Rush"
+    },
+    {
+      "id": "promo-flavor",
+      "image": "/images/common/gambar-promo4.webp",
+      "alt": "Promo pilihan rasa donat"
+    },
+    {
+      "id": "promo-biscoff",
+      "image": "/images/common/gambar-promo5.webp",
+      "alt": "Promo donat Biscoff"
+    }
+  ]
+},
+
+{
+  "slug": "paket-teman",
+  "title": "Paket teman",
+  "heroImage": "/images/common/bg-promo5.webp",
+  "heroAlt": "Paket donat untuk teman",
+  "items": [
+    {
+      "id": "promo-teman",
+      "image": "/images/common/gambar-promo1.webp",
+      "alt": "Promo donat spesial teman"
+    },
+    {
+      "id": "promo-sweet-six",
+      "image": "/images/common/gambar-promo2.webp",
+      "alt": "Promo Sweet Six"
+    },
+    {
+      "id": "promo-sweet-rush",
+      "image": "/images/common/gambar-promo3.webp",
+      "alt": "Promo Sweet Rush"
+    },
+    {
+      "id": "promo-flavor",
+      "image": "/images/common/gambar-promo4.webp",
+      "alt": "Promo pilihan rasa donat"
+    },
+    {
+      "id": "promo-biscoff",
+      "image": "/images/common/gambar-promo5.webp",
+      "alt": "Promo donat Biscoff"
+    }
+  ]
+}
+]
+
