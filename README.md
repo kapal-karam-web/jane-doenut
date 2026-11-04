@@ -127,16 +127,54 @@ Tanggung jawab:
 jane-doenut/
 ├── public/
 │   ├── data/
+│   │   ├── about.json
+│   │   ├── contact.json
 │   │   ├── locations.json
 │   │   ├── products.json
-│   │   ├── profile.json
-│   │   └── promos.json
-│   └── images/
-│       ├── common/
-│       │   └── hero-donuts.webp
-│       ├── products/
-│       └── promos/
+│   │   └── profile.json
+│   ├── images/
+│   │   ├── common/
+│   │   │   ├── bg-about.webp
+│   │   │   ├── bg-contact.webp
+│   │   │   ├── Gambar-about.webp
+│   │   │   ├── gambar-about2.webp
+│   │   │   ├── gambar-judul.webp
+│   │   │   ├── hero-donuts.webp
+│   │   │   ├── menu-banner.webp
+│   │   │   ├── value-gambar1.webp
+│   │   │   ├── value-gambar2.webp
+│   │   │   └── value-gambar3.webp
+│   │   └── products/
+│   │       ├── bomboloni-custard.webp
+│   │       ├── bomboloni-krim-cokelat.webp
+│   │       ├── bomboloni-matcha.webp
+│   │       ├── bomboloni-selai-stroberi.webp
+│   │       ├── bomboloni-stroberi.webp
+│   │       ├── bomboloni-vanilla.webp
+│   │       ├── donat-eclair-blueberry.webp
+│   │       ├── donat-eclair-cokelat-pisang.webp
+│   │       ├── donat-eclair-isi-vanilla.webp
+│   │       ├── donat-eclair-matcha.webp
+│   │       ├── donat-eclair-regal.webp
+│   │       ├── donat-eclair-stoberi-sunday.webp
+│   │       ├── donat-glaze-caramel.webp
+│   │       ├── donat-keju.webp
+│   │       ├── donat-matcha-wijen.webp
+│   │       ├── donat-mint-vanilla.webp
+│   │       ├── donat-mochi-chococips.webp
+│   │       ├── donat-mochi-cokelat-karamel.webp
+│   │       ├── donat-mochi-cokelat-meses.webp
+│   │       ├── donat-mochi-marshmallow.webp
+│   │       ├── donat-mochi-matcha.webp
+│   │       ├── donat-mochi-vanilla-almond.webp
+│   │       ├── donat-oreo.webp
+│   │       └── donat-vanilla-kacang.webp
+│   ├── favicon.svg
+│   └── icons.svg
 ├── src/
+│   ├── assets/
+│   │   ├── hero.png
+│   │   └── vite.svg
 │   ├── components/
 │   │   ├── home/
 │   │   │   ├── FeaturedMenu.jsx
@@ -148,6 +186,11 @@ jane-doenut/
 │   │   │   └── Navbar.jsx
 │   │   ├── location/
 │   │   │   └── LocationCard.jsx
+│   │   ├── menu/
+│   │   │   ├── CategoryFilter.jsx
+│   │   │   ├── MenuHero.jsx
+│   │   │   ├── ProductCard.jsx
+│   │   │   └── SearchBar.jsx
 │   │   └── ui/
 │   │       ├── ErrorMessage.jsx
 │   │       ├── LoadingSpinner.jsx
@@ -164,13 +207,16 @@ jane-doenut/
 │   │   ├── PromoDetailPage.jsx
 │   │   └── PromoPage.jsx
 │   ├── styles/
+│   │   ├── about.css
+│   │   ├── contact.css
 │   │   ├── home.css
-│   │   └── location.css
+│   │   ├── location.css
+│   │   └── menu.css
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
 ├── .gitignore
-├── eslint.config.js
+├── .oxlintrc.json
 ├── index.html
 ├── package-lock.json
 ├── package.json
@@ -178,7 +224,7 @@ jane-doenut/
 └── vite.config.js
 ```
 
-> Struktur folder dapat berkembang selama proses implementasi fitur.
+Folder `node_modules/` dan `dist/` tidak dicantumkan karena merupakan dependency lokal dan hasil production build yang dapat dibuat kembali melalui perintah npm.
 
 ## Cara Menjalankan Proyek
 
