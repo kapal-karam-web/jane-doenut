@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-
+  const CURRENT_YEAR = new Date().getFullYear();
 function Footer() {
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="site-footer">
@@ -61,7 +60,7 @@ function Footer() {
       <div className="site-footer__bottom">
         <div className="container">
           <p>
-            &copy; {currentYear} Jane Doenut. Dibuat oleh Kelompok Kapal Karam.
+            &copy; {CURRENT_YEAR} Jane Doenut. Dibuat oleh Kelompok Kapal Karam.
           </p>
         </div>
       </div>

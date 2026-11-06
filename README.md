@@ -56,7 +56,6 @@ Proyek dikembangkan secara kolaboratif menggunakan GitHub, feature branch, dan p
 | `/` | Home | Aqsa |
 | `/menu` | Menu produk | Langga |
 | `/promo` | Daftar promo | Eru |
-| `/promo/:slug` | Detail promo dinamis | Eru |
 | `/about` | Our Story | Eru |
 | `/location` | Lokasi dan informasi usaha | Aqsa |
 | `/contact` | Formulir kontak | Eru |
@@ -191,6 +190,8 @@ jane-doenut/
 │   │   │   ├── MenuHero.jsx
 │   │   │   ├── ProductCard.jsx
 │   │   │   └── SearchBar.jsx
+│   │   ├── promo/
+│   │   |   └── PromoCard.jsx
 │   │   └── ui/
 │   │       ├── ErrorMessage.jsx
 │   │       ├── LoadingSpinner.jsx
@@ -393,21 +394,6 @@ Sebelum membuat pull request, jalankan:
 npm run lint
 npm run build
 ```
-
-Checklist pemeriksaan manual:
-
-- [ ] Seluruh route dapat dibuka.
-- [ ] Tidak ada error pada browser console.
-- [ ] Navbar dapat digunakan pada desktop dan mobile.
-- [ ] Menu mobile dapat dibuka dan ditutup.
-- [ ] Navigasi dapat digunakan menggunakan keyboard.
-- [ ] Seluruh gambar memiliki teks alternatif yang sesuai.
-- [ ] Data menampilkan loading state ketika dimuat.
-- [ ] Data menampilkan error state ketika gagal dimuat.
-- [ ] Tombol retry bekerja.
-- [ ] Formulir menampilkan validasi yang sesuai.
-- [ ] Tampilan telah diperiksa pada ukuran mobile, tablet, dan desktop.
-- [ ] Halaman 404 muncul untuk route yang tidak tersedia.
 ---
 
 Dikembangkan oleh **Muh Aqsa Sirojudin, Nandana Atha Balangga, dan Putra Erlang Duawa** untuk Tugas Besar Tahap 1.
