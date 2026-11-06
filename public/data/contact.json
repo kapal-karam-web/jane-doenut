@@ -28,5 +28,33 @@
     "title": "Come Visit Us",
     "description": "Come and experience our delicious donuts in person. We are located in the heart of Medan.",
     "directionsButton": "Get Direction"
+  },
+  "form": {
+    "eyebrow": "Kirim Pesan",
+    "title": "Ceritakan kebutuhanmu",
+    "description": "Isi formulir di bawah ini dan kami akan menghubungimu kembali.",
+    "fields": {
+      "name": {
+        "label": "Nama lengkap",
+        "placeholder": "Masukkan nama lengkap"
+      },
+      "email": {
+        "label": "Alamat email",
+        "placeholder": "nama@email.com"
+      },
+      "message": {
+        "label": "Pesan",
+        "placeholder": "Tuliskan pertanyaan atau pesanmu di sini..."
+      }
+    },
+    "submitButton": "Kirim Pesan"
+  },
+  
+  "validation":{
+    "nameRequired": "Nama lengkap harus diisi.",
+    "emailRequired": "Alamat email harus diisi.",
+    "emailInvalid": "Alamat email tidak valid.",
+    "messageRequired": "Pesan harus diisi.",
+    "successMessage": "Pesan berhasil dikirim! Terima kasih telah menghubungi kami."
   }
 }
