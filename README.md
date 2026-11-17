@@ -2,9 +2,9 @@
 
 Jane Doenut adalah usaha kuliner yang menawarkan beragam pilihan donat dengan rasa menarik dan harga terjangkau. Melalui website ini, pelanggan dapat mengenal Jane Doenut, melihat menu dan promo, serta memperoleh informasi lokasi dan kontak dengan mudah.
 
-Website profile **Jane Doenut** yang dikembangkan sebagai Tugas Besar Tahap 1 oleh kelompok **Kapal Karam**. Website ini memperkenalkan profil usaha, produk, promo, cerita usaha, lokasi, dan menyediakan halaman kontak dalam tampilan responsif.
+Website profile **Jane Doenut** yang dikembangkan sebagai Tugas Besar Pemrograman Web oleh kelompok **Kapal Karam**. Website ini memperkenalkan profil usaha, produk, promo, cerita usaha, lokasi, dan menyediakan halaman kontak dalam tampilan responsif.
 
-> **Status pengembangan:** Dalam proses pengerjaan.
+> **Status pengembangan:** Tahap 1 (Frontend) Selesai, lanjut Tahap 2 (Backend) -> Dalam proses pengerjaan.
 
 ## Daftar Isi
 
