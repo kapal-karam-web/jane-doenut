@@ -396,4 +396,43 @@ npm run build
 ```
 ---
 
-Dikembangkan oleh **Muh Aqsa Sirojudin, Nandana Atha Balangga, dan Putra Erlang Duawa** untuk Tugas Besar Tahap 1.
+Dikembangkan oleh **Muh Aqsa Sirojudin, Nandana Atha Balangga, dan Putra Erlang Duawa** untuk Tugas Besar Pemrograman Web.
+
+### Muh Aqsa Sirojudin
+#### Home:
+<img width="1605" height="3580" alt="image" src="https://github.com/user-attachments/assets/f8fb8ce4-046c-489f-9ce5-edf54db8677e" />
+
+#### Home (Flex):
+<img width="1046" height="1463" alt="home flex" src="https://github.com/user-attachments/assets/2fa01feb-b42d-43e4-95e6-beaa9c22c3ff" />
+
+#### Location:
+<img width="1605" height="1684" alt="location" src="https://github.com/user-attachments/assets/50c6e667-144c-40d4-94fd-3e5ba6efdf0d" />
+
+#### Location (Flex):
+<img width="1276" height="918" alt="location flex" src="https://github.com/user-attachments/assets/1c2122ac-e5de-4f71-baed-aa92606fff2f" />
+
+### Nandana Atha Balangga
+#### Menu:
+<img width="5068" height="2281" alt="menu" src="https://github.com/user-attachments/assets/87b37acd-2c97-4f3e-8727-c84c9ee006bb" />
+
+#### Menu (Flex):
+<img width="1712" height="2826" alt="menu flex" src="https://github.com/user-attachments/assets/e3551427-7e89-44df-824f-692c57111925" />
+
+### Putra Erlang Duawa
+#### Promo:
+<img width="4815" height="3444" alt="promo" src="https://github.com/user-attachments/assets/9d7dec4b-c1ad-4b36-9892-6fe5b8c17152" />
+
+#### Promo (Flex):
+<img width="2562" height="2760" alt="promo flex" src="https://github.com/user-attachments/assets/6c9cae95-32bf-430d-86f8-394cdd410ca9" />
+
+#### Our Story(About):
+<img width="1605" height="2333" alt="about" src="https://github.com/user-attachments/assets/5791b695-d346-4500-94db-29df95b6b350" />
+
+#### Our Story(About) (Flex):
+<img width="2136" height="917" alt="about flex" src="https://github.com/user-attachments/assets/e7c1f4e9-1acf-4ca1-8fda-9158d622c3f0" />
+
+#### Contact:
+<img width="1605" height="2208" alt="image" src="https://github.com/user-attachments/assets/52391695-c9de-4dd5-a5f0-12d0a19ea17e" />
+
+#### Contact (Flex):
+<img width="2134" height="916" alt="contact flex" src="https://github.com/user-attachments/assets/f9e9a443-7d97-4165-897b-9307619ef05e" />
