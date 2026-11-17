@@ -2,9 +2,9 @@
 
 Jane Doenut adalah usaha kuliner yang menawarkan beragam pilihan donat dengan rasa menarik dan harga terjangkau. Melalui website ini, pelanggan dapat mengenal Jane Doenut, melihat menu dan promo, serta memperoleh informasi lokasi dan kontak dengan mudah.
 
-Website profile **Jane Doenut** yang dikembangkan sebagai Tugas Besar Tahap 1 oleh kelompok **Kapal Karam**. Website ini memperkenalkan profil usaha, produk, promo, cerita usaha, lokasi, dan menyediakan halaman kontak dalam tampilan responsif.
+Website profile **Jane Doenut** yang dikembangkan sebagai Tugas Besar Pemrograman Web oleh kelompok **Kapal Karam**. Website ini memperkenalkan profil usaha, produk, promo, cerita usaha, lokasi, dan menyediakan halaman kontak dalam tampilan responsif.
 
-> **Status pengembangan:** Dalam proses pengerjaan.
+> **Status pengembangan:** Tahap 1 (Frontend) Selesai, lanjut Tahap 2 (Backend) -> Dalam proses pengerjaan.
 
 ## Daftar Isi
 
@@ -56,6 +56,7 @@ Proyek dikembangkan secara kolaboratif menggunakan GitHub, feature branch, dan p
 | `/` | Home | Aqsa |
 | `/menu` | Menu produk | Langga |
 | `/promo` | Daftar promo | Eru |
+| `/promo/:slug` | Detail promo | Eru |
 | `/about` | Our Story | Eru |
 | `/location` | Lokasi dan informasi usaha | Aqsa |
 | `/contact` | Formulir kontak | Eru |
@@ -130,14 +131,25 @@ jane-doenut/
 │   │   ├── contact.json
 │   │   ├── locations.json
 │   │   ├── products.json
-│   │   └── profile.json
+│   │   ├── profile.json
+│   │   └── promos.json
 │   ├── images/
 │   │   ├── common/
 │   │   │   ├── bg-about.webp
 │   │   │   ├── bg-contact.webp
+│   │   │   ├── bg-promo.webp
+│   │   │   ├── bg-promo2(2).webp
+│   │   │   ├── bg-promo3(1).webp
+│   │   │   ├── bg-promo4.webp
+│   │   │   ├── bg-promo5.webp
 │   │   │   ├── Gambar-about.webp
 │   │   │   ├── gambar-about2.webp
 │   │   │   ├── gambar-judul.webp
+│   │   │   ├── gambar-promo1.webp
+│   │   │   ├── gambar-promo2.webp
+│   │   │   ├── gambar-promo3.webp
+│   │   │   ├── gambar-promo4.webp
+│   │   │   ├── gambar-promo5.webp
 │   │   │   ├── hero-donuts.webp
 │   │   │   ├── menu-banner.webp
 │   │   │   ├── value-gambar1.webp
@@ -191,7 +203,7 @@ jane-doenut/
 │   │   │   ├── ProductCard.jsx
 │   │   │   └── SearchBar.jsx
 │   │   ├── promo/
-│   │   |   └── PromoCard.jsx
+│   │   │   └── PromoCard.jsx
 │   │   └── ui/
 │   │       ├── ErrorMessage.jsx
 │   │       ├── LoadingSpinner.jsx
@@ -212,7 +224,8 @@ jane-doenut/
 │   │   ├── contact.css
 │   │   ├── home.css
 │   │   ├── location.css
-│   │   └── menu.css
+│   │   ├── menu.css
+│   │   └── promo.css
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
